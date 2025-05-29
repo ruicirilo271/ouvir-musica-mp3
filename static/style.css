@@ -1,0 +1,41 @@
+body {
+    background: #fdfaf6;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1, h3 {
+    color: #5d4037;
+}
+
+.card {
+    border: none;
+    background: #fff3e0;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+#tracks-list .list-group-item {
+    background-color: #fff8e1;
+    border: none;
+}
+
+#play-album-btn {
+    background-color: #795548;
+    border: none;
+}
+
+#play-album-btn:hover {
+    background-color: #5d4037;
+}
+
+.btn-primary {
+    background-color: #a1887f;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #8d6e63;
+}

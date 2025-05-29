@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Player de Álbuns</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+<div class="container py-4">
+    <h1 class="text-center mb-4">🎵 Player de Álbuns MP3</h1>
+    <div class="input-group mb-4">
+        <input id="search-input" type="text" class="form-control" placeholder="Digite artista ou álbum..." />
+        <button id="search-btn" class="btn btn-primary">Pesquisar</button>
+    </div>
+    <div id="albums" class="row gy-4"></div>
+    <div id="tracks-section" class="mt-5 d-none">
+        <h3>Músicas de <span id="album-name"></span></h3>
+        <button id="play-album-btn" class="btn btn-success mb-3">▶️ Ouvir Álbum</button>
+        <ul id="tracks-list" class="list-group"></ul>
+    </div>
+    <div id="player-section" class="mt-5 d-none">
+        <div class="card p-3 text-center shadow-sm">
+            <h5 id="current-track-title"></h5>
+            <p id="loading-message" class="text-muted"></p>
+            <audio id="audio-player" controls class="w-100 mt-2"></audio>
+        </div>
+    </div>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
